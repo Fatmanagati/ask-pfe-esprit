@@ -1,0 +1,54 @@
+<div class="body_wrapper sticky_menu"> 
+    <app-header></app-header>
+    <div class="breadcrumb_area_three">
+        <div class="container">
+            <div class="breadcrumb_text">
+                <h2>New <span>Question</span></h2>
+            </div>
+        </div>
+    </div>
+    <section class="contact_area sec_pad">
+        <div class="container">  
+            <form action="/question/add" class="contact_form">
+            <div class="row contact_fill">
+                <div class="col-lg-12 form-group">
+                    <h6>Title</h6>
+                    <input type="text" class="form-control" [(ngModel)]="question.title" name="title" id="title" placeholder="Title">
+                </div>
+                <div class="col-lg-12 form-group">
+                    <h6>Text</h6>
+                    <input type="text" class="form-control" [(ngModel)]="question.text" name="text" id="text" placeholder="Write your question">
+                    <!-- <editor [init]="editorConfig" [(ngModel)]="question.Code" name="Code" id="Code"></editor> -->
+                </div>
+                <div class="col-lg-12 form-group">
+                    <h6>Code</h6>
+                    <!-- <input type="text" class="form-control" [(ngModel)]="question.text" name="text" id="text" placeholder="Write your question"> -->
+                    <!-- <editor [init]="editorConfig" [(ngModel)]="question.codinsert" name="codinsert" id="codinsert"></editor> -->
+                    <textarea class="form-control message"  rows="8" [(ngModel)]="question.codinsert" name="codinsert" id="codinsert"></textarea>
+                </div>
+                <div class="col-lg-6 form-group">
+                    <h6>Department</h6>
+                    <select [(ngModel)]="departmentId" name="departmentId" class="custom-select">
+                      <option value="">Select department</option>
+                      <option *ngFor="let dep of deps" >{{ dep.name }}</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <h6>Technology</h6>
+                    <select [(ngModel)]="techId" name="techId" class="custom-select">
+                      <option value="">Select Technology</option>
+                      <option *ngFor="let tech of techs" >{{ tech.name }}</option>
+                    </select>
+                  </div>
+               
+                <div  class="col-lg-12 form-group">
+                    <button type="button" (click)="addQuestion()" class="btn action_btn thm_btn">Save</button>
+                </div>
+               
+            </div>
+            </form>
+        </div>
+    </section>
+    <app-footer></app-footer>
+    </div>
+   

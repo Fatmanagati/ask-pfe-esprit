@@ -1,0 +1,28 @@
+<div class="body_wrapper sticky_menu"> 
+    <app-header></app-header>
+    <div class="breadcrumb_area_three">
+        <div class="container">
+            <div class="breadcrumb_text">
+                <h2>New <span>Departement</span></h2>
+            </div>
+        </div>
+    </div>
+    <section class="contact_area sec_pad">
+        <div class="container">  
+            <form action="/departementadd" class="contact_form">
+            <div class="row contact_fill">
+                <div class="col-lg-12 form-group">
+                    <h6>Name</h6>
+                    <input type="text" class="form-control" [(ngModel)]="departement.name" name="name" id="name" placeholder="DEPARTEMENT NAME">
+                </div>
+     
+         
+                <div class="col-lg-12 form-group">
+                    <button type="button"  (click)="addDep()" class="btn action_btn thm_btn">Save</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </section>
+    <app-footer></app-footer>
+    </div>

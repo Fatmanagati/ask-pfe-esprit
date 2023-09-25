@@ -1,0 +1,81 @@
+<div class="body_wrapper sticky_menu"> 
+    <app-header></app-header>
+    <div class="breadcrumb_area_three">
+        <div class="container">
+            <div class="breadcrumb_text">
+                <h2>Update <span>User</span></h2>
+            </div>
+        </div>
+    </div>
+    <section class="contact_area sec_pad">
+        <div class="container">  
+            <!-- <form action="/user/add" class="contact_form">
+            <div class="row contact_fill">
+                <div class="col-lg-4 form-group">
+                    <h6>Username</h6>
+                    <input type="text" class="form-control" [(ngModel)]="user.username" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="col-lg-4 form-group">
+                    <h6>Email</h6>
+                    <input type="email" class="form-control" [(ngModel)]="user.email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="col-lg-4 form-group">
+                    <h6>Role</h6>
+                    <input type="tel" class="form-control" [(ngModel)]="user.role" name="role" id="role" placeholder="ADMIN,EMPLOYEE">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <h6>Password</h6>
+                    <input class="form-control" type="password" [(ngModel)]="user.password" id="password" name="password" placeholder="Enter password ..."/>
+                </div>
+                <div class="col-lg-6 form-group">
+                    <h6>Confirm Password</h6>
+                    <input class="form-control" type="password" placeholder="Enter password ..." />
+                </div>
+                <div class="col-lg-12 form-group">
+                    <button type="button"  (click)="updateUser()" class="btn action_btn thm_btn">Save</button>
+                </div>
+            </div> 
+            </form>-->
+            <form action="/user/add" class="contact_form">
+                <div class="row contact_fill">
+                    <div class="col-lg-6 form-group">
+                        <h6>Username</h6>
+                        <input type="text" class="form-control" [(ngModel)]="user.username" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <h6>Email</h6>
+                        <input type="email" class="form-control" [(ngModel)]="user.email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <h6>Password</h6>
+                        <input class="form-control" type="password" [(ngModel)]="user.password" id="password" name="password" placeholder="Enter password ..." />
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <h6>Confirm Password</h6>
+                        <input class="form-control" type="password" [(ngModel)]="confirmPassword" id="confirmPassword" name="confirmPassword" placeholder="Confirm password ..." />
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <h6>Department</h6>
+                        <select [(ngModel)]="departmentId" name="departmentId" class="custom-select">
+                          <option value="">{{user.departement?.name}}</option>
+                          <option *ngFor="let dep of deps" >{{ dep.name }}</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6 form-group" >
+                        <h6>Role</h6>
+                        <select [(ngModel)]="selectedRole" name="role" class="custom-select">
+                            <option value="">{{user.role}}</option>
+                          <option *ngFor="let role of modesLabels">{{ role }}</option>
+                        </select>
+                    </div>
+                   
+                    <div  class="col-lg-12 form-group">
+                        <button type="button" (click)="updateUser()" class="btn action_btn thm_btn">Save</button>
+                    </div>
+                   
+                </div>
+                </form>
+        </div>
+    </section>
+    <app-footer></app-footer>
+    </div>

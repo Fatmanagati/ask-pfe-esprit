@@ -1,0 +1,97 @@
+
+
+
+    <nav class="navbar navbar-expand-lg menu_one dark_menu display_none sticky-nav">
+        <div class="container custom_container">
+            <a class="navbar-brand header_logo" href="#">
+                <!-- <img class="first_logo sticky_logo main_logo" src="../assets/img/logo.png" srcset="../assets/img/logo-2x.png 2x" alt="logo"> -->
+                <img class="white_logo" src="../assets/img/logoask4.png" alt="logo">
+            </a>
+            <div class="search-input">
+                <ion-icon class="search-icon" name="search-outline"></ion-icon>
+                <input type="text" placeholder="Search..." value="" class="">
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="menu_toggle">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="hamburger-cross">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav menu ml-auto">
+                    <li class="nav-item dropdown submenu">
+                        <a href="index.html" class="nav-link dropdown-toggle">Home</a>
+                            <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="index.html" class="nav-link">Creative Helpdesk</a></li>
+                                <li class="nav-item"><a href="index-multi.html" class="nav-link">Multi Helpdesk</a></li>
+                                <li class="nav-item"><a href="index-classic.html" class="nav-link">Classic Helpdesk</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown submenu">
+                        <a class="nav-link dropdown-toggle" routerLink="/rfp" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            RFP
+                        </a>
+                        <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                        <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="onepage.html" class="nav-link">Onepage Doc</a></li>
+                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><a href="forums.html" class="nav-link">Forum</a></li>
+                            <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+                            <li class="nav-item"><a href="404-error.html" class="nav-link">404 Error</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown submenu">
+                        <a class="nav-link dropdown-toggle" routerLink="/question" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Questions
+                        </a>
+                        <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                           data-toggle="dropdown"></i>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="forums.html" class="nav-link">Forums Root</a></li>
+                            <li class="nav-item"><a href="forum-topics.html" class="nav-link">Forum Topics</a></li>
+                            <li class="nav-item"><a href="forum-single.html" class="nav-link">Topic Details</a></li>
+                            <li class="nav-item"><a href="forum-profile.html" class="nav-link">User Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown submenu">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Settings
+                        </a>
+                        <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-toggle="dropdown"></i>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/user" class="nav-link">Users</a></li>
+                            <li class="nav-item"><a routerLink="/departement" class="nav-link">Departements</a></li>
+                            <li class="nav-item"><a routerLink="/technology" class="nav-link">Technologies</a></li>
+                            <li class="nav-item"><a routerLink="/theme" class="nav-link">RFP Themes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="right-nav">
+                    <a class="nav_btn tp_btn" href="" (click)="onLogout()" target="_blank">Logout</a>
+                    <a class="px-2 ml-3" href="#" title="Subscribe to the newsletter">
+                        <ion-icon name="mail"></ion-icon>
+                    </a>
+                    <a class="px-2" href="#" title="RSS feed">
+                        <ion-icon name="logo-rss"></ion-icon>
+                    </a>
+                    <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                        <label for="something" class="tab-btn tab-btns">
+                            <ion-icon class="light-mode" name="contrast"></ion-icon>
+                        </label>
+                        <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        <label for="something" class="tab-btn">
+                            <ion-icon class="dark-mode" name="contrast-outline"></ion-icon>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
